@@ -1,0 +1,6 @@
+fixtures:
+  repositories:
+    selinux: 'https://github.com/voxpupuli/puppet-selinux.git'
+    stdlib: 'https://github.com/puppetlabs/puppetlabs-stdlib.git'
+  symlinks:
+    profile_base: "#{source_dir}"

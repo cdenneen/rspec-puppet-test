@@ -1,0 +1,4 @@
+---
+profile_base::sensu::client_custom:
+  custom_properties:
+    Team: Level2

@@ -1,0 +1,7 @@
+---
+ap_env: 'dev'
+vm_type: 'unknown'
+message: "This node is using common data"
+lookup_options:
+  profile_base::sensu::client_custom:
+    merge: deep

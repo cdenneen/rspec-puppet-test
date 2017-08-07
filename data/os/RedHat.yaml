@@ -1,0 +1,10 @@
+---
+profile_base::filebeat::prospectors:
+  'syslog':
+    paths:
+      - '/var/log/messages'
+    input_type: 'log'
+    fields_under_root: 'true'
+    fields:
+      apenv: "%{ap_env}"
+    doc_type: 'syslog'

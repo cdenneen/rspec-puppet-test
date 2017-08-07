@@ -1,0 +1,2 @@
+---
+profile_base::el::selinux_mode: 'disabled'

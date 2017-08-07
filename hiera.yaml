@@ -1,0 +1,15 @@
+---
+version: 4
+datadir: data
+hierarchy:
+  - name: "ap_env"
+    path: "environment/%{ap_env}"
+    backend: yaml
+  - name: "os"
+    path: "os/%{facts.os.family}"
+    backend: yaml
+  - name: "virtual"
+    path: "%{facts.virtual}"
+    backend: yaml
+  - name: "common"
+    backend: yaml

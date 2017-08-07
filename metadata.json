@@ -1,0 +1,50 @@
+{
+  "author": "cdenneen",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 4.15.0"},
+    {"name":"puppet-selinux","version_requirement":">= 0.8.0"}
+  ],
+  "data_provider": "hiera",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04",
+        "16.04"
+      ]
+    },
+    {
+      "operatingsystem": "windows",
+      "operatingsystemrelease": [
+        "2012 R2"
+      ]
+    },
+    {
+      "operatingsystem": "Solaris",
+      "operatingsystemrelease": [
+        "10",
+        "11"
+      ],
+      "hardwaremodel": [
+        "sparc"
+      ]
+    }
+  ],
+  "license": "Apache-2.0",
+  "name": "cdenneen-profile_base",
+  "project_page": "",
+  "source": "https://github.com/cdenneen/rspec-puppet-test.git",
+  "issues_url": "",
+  "summary": "Base Profile Module",
+  "description": "Profile Base Module to incorporate defaults across platforms.",
+  "version": "1.2.0"
+}
