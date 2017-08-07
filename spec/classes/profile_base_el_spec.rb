@@ -13,7 +13,8 @@ describe 'profile_base::el' do
         if (facts[:osfamily] == 'RedHat') then
           context "profile_base::el class without any parameters" do
             it { is_expected.to compile.with_all_deps }
-            #it { is_expected.to contain_stage('last') }
+            # Adding this test fixes the environment clear error that started in rspec-puppet 2.6.5
+            it { is_expected.to contain_stage('last') }
           end
         end
       end
